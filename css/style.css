@@ -228,9 +228,10 @@ html[data-theme="dark"] .chips span{background:var(--paper)}
 /* Kemampuan bars */
 .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px;margin-top:14px}
 .skill-head{display:flex;justify-content:space-between;font-weight:700;margin-bottom:8px;font-size:.98rem}
-.skill-pct{color:var(--coral)}
+.skill-pct{color:var(--coral);display:inline-block}
 .bar{height:16px;border:2.5px solid var(--border);border-radius:999px;background:var(--paper);overflow:hidden}
 .bar span{
+   animation:geser 1.1s linear infinite;
   display:block;height:100%;width:0;border-radius:999px;
   background:repeating-linear-gradient(45deg,var(--teal) 0 14px,#0DA192 14px 28px);
   transition:width 1.3s cubic-bezier(.22,.8,.32,1);
@@ -238,6 +239,9 @@ html[data-theme="dark"] .chips span{background:var(--paper)}
 .skill:nth-child(4n+2) .bar span{background:repeating-linear-gradient(45deg,var(--coral) 0 14px,#F05252 14px 28px)}
 .skill:nth-child(4n+3) .bar span{background:repeating-linear-gradient(45deg,var(--yellow) 0 14px,#F5B81D 14px 28px)}
 .skill:nth-child(4n) .bar span{background:repeating-linear-gradient(45deg,var(--purple) 0 14px,#5A4BD1 14px 28px)}
+.skill.visible .skill-pct{animation:mantul .6s ease}
+@keyframes mantul{0%{transform:scale(.3) rotate(-14deg)}60%{transform:scale(1.3) rotate(6deg)}100%{transform:scale(1) rotate(0)}}
+@keyframes geser{to{background-position:39.6px 0}}
 .skill.visible .bar span{width:var(--w)}
 
 /* Pengalaman */
