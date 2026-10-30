@@ -32,12 +32,18 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#keahlian">Keahlian</a></li>
-      <li><a href="#kemampuan">Kemampuan</a></li>
-      <li><a href="#pengalaman">Pengalaman</a></li>
-      <li><a href="#pendidikan">Pendidikan</a></li>
-      <li><a href="#kontak" class="nav-cta">Hubungi Saya</a></li>
+      <li><a href="#tentang" data-i18n="nav_about">Tentang</a></li>
+      <li><a href="#keahlian" data-i18n="nav_expertise">Keahlian</a></li>
+      <li><a href="#kemampuan" data-i18n="nav_skills">Kemampuan</a></li>
+      <li><a href="#pengalaman" data-i18n="nav_experience">Pengalaman</a></li>
+      <li><a href="#pendidikan" data-i18n="nav_education">Pendidikan</a></li>
+      <li><a href="#kontak" class="nav-cta" data-i18n="contact_me">Hubungi Saya</a></li>
+      <li>
+        <div class="lang-switch" role="group" aria-label="Language / Bahasa">
+          <button type="button" class="lang-btn active" data-lang="id">ID</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </li>
       <li>
         <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema gelap/terang" title="Tema gelap / terang">
           <svg class="icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -52,13 +58,13 @@
   <!-- ============ BERANDA / HERO ============ -->
   <section class="hero container" id="beranda">
     <div class="hero-text">
-      <p class="hero-badge reveal">Bogor, Jawa Barat · Terbuka untuk proyek remote</p>
-      <h1 class="reveal">Halo, saya Elga <span class="wave" aria-hidden="true">👋</span></h1>
-      <h2 class="hero-role reveal">Saya seorang <span class="role-rotator" id="roleRotator">Editor Foto &amp; Video</span><span class="caret" aria-hidden="true"></span></h2>
-      <p class="hero-desc reveal">Editor foto/video dan kreator visual sejak SMK, sekaligus Annotator Data AI &amp; Transcriber di platform global dengan 500+ audio selesai dan rating kualitas 97% (Bahasa Indonesia). Saya pembelajar cepat yang senang menguasai hal baru — terbukti dari sales dan perhotelan, dua bidang di luar keahlian utama saya yang berhasil saya kuasai karena kemauan belajar terus. Teliti, disiplin, dan terbiasa bekerja mandiri maupun kolaboratif.</p>
+      <p class="hero-badge reveal" data-i18n="hero_badge">Bogor, Jawa Barat · Terbuka untuk proyek remote</p>
+      <h1 class="reveal" data-i18n="hero_hello">Halo, saya Elga <span class="wave" aria-hidden="true">👋</span></h1>
+      <h2 class="hero-role reveal"><span data-i18n="hero_iam">Saya seorang</span> <span class="role-rotator" id="roleRotator">Editor Foto &amp; Video</span><span class="caret" aria-hidden="true"></span></h2>
+      <p class="hero-desc reveal" data-i18n="hero_desc">Editor foto/video dan kreator visual sejak SMK, sekaligus Annotator Data AI &amp; Transcriber di platform global dengan 500+ audio selesai dan rating kualitas 97% (Bahasa Indonesia). Saya pembelajar cepat yang senang menguasai hal baru — terbukti dari sales dan perhotelan, dua bidang di luar keahlian utama saya yang berhasil saya kuasai karena kemauan belajar terus. Teliti, disiplin, dan terbiasa bekerja mandiri maupun kolaboratif.</p>
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#kontak">Hubungi Saya</a>
-        <a class="btn btn-ghost" href="assets/CV_Elga_Bifardika_Elfanda.pdf" download>Unduh CV</a>
+        <a class="btn btn-primary" href="#kontak" data-i18n="contact_me">Hubungi Saya</a>
+        <a class="btn btn-ghost" id="cvDownload" href="assets/CV_Elga_Bifardika_Elfanda.pdf" download data-i18n="download_cv">Unduh CV</a>
       </div>
       <div class="socials reveal">
         <a href="https://www.linkedin.com/in/elga-bifardika-elfanda" target="_blank" rel="noopener" aria-label="LinkedIn Elga" title="LinkedIn">
@@ -70,8 +76,7 @@
         <a href="https://wa.me/6287837066790" target="_blank" rel="noopener" aria-label="WhatsApp Elga" title="WhatsApp">
           <svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.94 6.45 17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.22-.08-.39-.12-.55.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.55-1.35-.77-1.84-.2-.48-.42-.42-.57-.43h-.49c-.17 0-.43.06-.68.31-.24.25-.93.9-.93 2.27 0 1.37.99 2.69 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.45 1.58.58.66.21 1.27.18 1.74.11.53-.08 1.62-.5 1.99-1.13.37-.62.37-1.16.26-1.27-.11-.11-.23-.17-.48-.29z"/></svg>
         </a>
-        <!-- Tambahkan tautan GitHub Anda di sini bila sudah punya akun: ganti href="#" dengan URL profil GitHub -->
-        <a href="#" aria-label="GitHub Elga (segera)" title="GitHub (segera)">
+        <a href="https://github.com/premology" target="_blank" rel="noopener" aria-label="GitHub Elga" title="GitHub">
           <svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 1.33 1.08.83 2.28v3.38c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
         </a>
       </div>
@@ -84,67 +89,67 @@
       <figure class="hero-frame" data-tilt>
         <img src="assets/hero.jpg" alt="Ilustrasi Elga — editor visual bekerja dengan laptop, kamera, dan headphone" width="960" height="640">
       </figure>
-      <span class="sticker sticker-a">Top 5 Penjualan</span>
-      <span class="sticker sticker-b">Rating 97%</span>
+      <span class="sticker sticker-a" data-i18n="sticker_a">Top 5 Penjualan</span>
+      <span class="sticker sticker-b" data-i18n="sticker_b">Rating 97%</span>
     </div>
   </section>
 
   <!-- Marquee bergerak -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Adobe Photoshop ✦ Premiere Pro ✦ Fotografi ✦ Transkripsi Audio ✦ Anotasi Data AI ✦ Evaluasi ASR ✦ QA Linguistik ✦ Otomatisasi ✦ Pengujian Web3 ✦ Riset Internet ✦ </span>
-      <span>Adobe Photoshop ✦ Premiere Pro ✦ Fotografi ✦ Transkripsi Audio ✦ Anotasi Data AI ✦ Evaluasi ASR ✦ QA Linguistik ✦ Otomatisasi ✦ Pengujian Web3 ✦ Riset Internet ✦ </span>
+      <span data-i18n="marquee">Adobe Photoshop ✦ Premiere Pro ✦ Fotografi ✦ Transkripsi Audio ✦ Anotasi Data AI ✦ Evaluasi ASR ✦ QA Linguistik ✦ Otomatisasi ✦ Pengujian Web3 ✦ Riset Internet ✦ </span>
+      <span data-i18n="marquee">Adobe Photoshop ✦ Premiere Pro ✦ Fotografi ✦ Transkripsi Audio ✦ Anotasi Data AI ✦ Evaluasi ASR ✦ QA Linguistik ✦ Otomatisasi ✦ Pengujian Web3 ✦ Riset Internet ✦ </span>
     </div>
   </div>
 
   <!-- ============ TENTANG ============ -->
   <section class="section container" id="tentang">
-    <h2 class="section-title reveal"><span class="title-chip chip-coral">01</span> Tentang Saya</h2>
+    <h2 class="section-title reveal" data-i18n="about_title"><span class="title-chip chip-coral">01</span> Tentang Saya</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>Saya <strong>Elga Bifardika Elfanda</strong>, editor foto/video dan kreator visual dengan pengalaman sejak SMK. Keahlian utama saya di <strong>Adobe Photoshop</strong>, <strong>Premiere Pro</strong>, dan fotografi — dipadukan dengan pengalaman sebagai <strong>Annotator Data AI dan Transcriber</strong> di platform global seperti Alignerr, CrowdGen, dan OneForma.</p>
-        <p>Di dunia data, saya menyelesaikan <strong>500+ audio</strong> dengan rating kualitas <strong>97% Bahasa Indonesia</strong> dan <strong>88,37% Bahasa Inggris</strong>, serta mengembangkan skrip otomatisasi untuk pengujian Web3. Latar belakang penjualan (peringkat lima besar dalam dua bulan) dan perhotelan mengasah komunikasi klien dan disiplin kerja saya.</p>
-        <p>Saya terbiasa bekerja mandiri maupun kolaboratif di lapangan maupun di depan komputer.</p>
+        <p data-i18n="about_p1">Saya <strong>Elga Bifardika Elfanda</strong>, editor foto/video dan kreator visual dengan pengalaman sejak SMK. Keahlian utama saya di <strong>Adobe Photoshop</strong>, <strong>Premiere Pro</strong>, dan fotografi — dipadukan dengan pengalaman sebagai <strong>Annotator Data AI dan Transcriber</strong> di platform global seperti Alignerr, CrowdGen, dan OneForma.</p>
+        <p data-i18n="about_p2">Di dunia data, saya menyelesaikan <strong>500+ audio</strong> dengan rating kualitas <strong>97% Bahasa Indonesia</strong> dan <strong>88,37% Bahasa Inggris</strong>, serta mengembangkan skrip otomatisasi untuk pengujian Web3. Latar belakang penjualan (peringkat lima besar dalam dua bulan) dan perhotelan mengasah komunikasi klien dan disiplin kerja saya.</p>
+        <p data-i18n="about_p3">Saya terbiasa bekerja mandiri maupun kolaboratif di lapangan maupun di depan komputer.</p>
       </div>
       <div class="stats reveal">
-        <div class="stat"><span class="stat-num" data-count="500" data-suffix="+">0</span><span class="stat-label">Audio ditranskrip</span></div>
-        <div class="stat"><span class="stat-num" data-count="97" data-suffix="%">0</span><span class="stat-label">Rating kualitas B. Indonesia</span></div>
-        <div class="stat"><span class="stat-num" data-count="88" data-suffix="%">0</span><span class="stat-label">Rating kualitas B. Inggris</span></div>
-        <div class="stat"><span class="stat-num" data-count="20" data-suffix="+">0</span><span class="stat-label">Jam/minggu proyek AI</span></div>
+        <div class="stat"><span class="stat-num" data-count="500" data-suffix="+">0</span><span class="stat-label" data-i18n="stat_1">Audio ditranskrip</span></div>
+        <div class="stat"><span class="stat-num" data-count="97" data-suffix="%">0</span><span class="stat-label" data-i18n="stat_2">Rating kualitas B. Indonesia</span></div>
+        <div class="stat"><span class="stat-num" data-count="88" data-suffix="%">0</span><span class="stat-label" data-i18n="stat_3">Rating kualitas B. Inggris</span></div>
+        <div class="stat"><span class="stat-num" data-count="20" data-suffix="+">0</span><span class="stat-label" data-i18n="stat_4">Jam/minggu proyek AI</span></div>
       </div>
     </div>
   </section>
 
   <!-- ============ KEAHLIAN ============ -->
   <section class="section container" id="keahlian">
-    <h2 class="section-title reveal"><span class="title-chip chip-teal">02</span> Apa yang Saya Lakukan</h2>
-    <p class="section-sub reveal">Klik setiap kartu untuk melihat detailnya.</p>
+    <h2 class="section-title reveal" data-i18n="expertise_title"><span class="title-chip chip-teal">02</span> Apa yang Saya Lakukan</h2>
+    <p class="section-sub reveal" data-i18n="expertise_sub">Klik setiap kartu untuk melihat detailnya.</p>
     <div class="cards">
       <article class="card reveal" data-tilt>
         <img src="assets/visual.jpg" alt="Ilustrasi ruang kerja penyuntingan foto dan video" loading="lazy">
         <div class="card-body">
-          <h3>Kreator Visual</h3>
-          <p>Penyuntingan foto &amp; video dan fotografi sejak SMK — konten rapi, tajam, dan siap publikasi.</p>
-          <div class="chips"><span>Photoshop</span><span>Premiere Pro</span><span>Fotografi</span></div>
-          <button class="card-btn" data-modal="visual">Lihat detail →</button>
+          <h3 data-i18n="card1_title">Kreator Visual</h3>
+          <p data-i18n="card1_text">Penyuntingan foto &amp; video dan fotografi sejak SMK — konten rapi, tajam, dan siap publikasi.</p>
+          <div class="chips" data-i18n="card1_chips"><span>Photoshop</span><span>Premiere Pro</span><span>Fotografi</span></div>
+          <button class="card-btn" data-modal="visual" data-i18n="see_details">Lihat detail →</button>
         </div>
       </article>
       <article class="card reveal" data-tilt>
         <img src="assets/ai-data.jpg" alt="Ilustrasi anotasi data AI dan transkripsi audio" loading="lazy">
         <div class="card-body">
-          <h3>Annotator Data AI &amp; Transkripsi</h3>
-          <p>Transkripsi, pelabelan audio, dan evaluasi data pelatihan AI untuk platform global.</p>
-          <div class="chips"><span>Transkripsi</span><span>Pelabelan Audio</span><span>Evaluasi ASR</span><span>QA Linguistik</span></div>
-          <button class="card-btn" data-modal="aidata">Lihat detail →</button>
+          <h3 data-i18n="card2_title">Annotator Data AI &amp; Transkripsi</h3>
+          <p data-i18n="card2_text">Transkripsi, pelabelan audio, dan evaluasi data pelatihan AI untuk platform global.</p>
+          <div class="chips" data-i18n="card2_chips"><span>Transkripsi</span><span>Pelabelan Audio</span><span>Evaluasi ASR</span><span>QA Linguistik</span></div>
+          <button class="card-btn" data-modal="aidata" data-i18n="see_details">Lihat detail →</button>
         </div>
       </article>
       <article class="card reveal" data-tilt>
         <img src="assets/web3.jpg" alt="Ilustrasi otomatisasi alur kerja dan pengujian Web3" loading="lazy">
         <div class="card-body">
-          <h3>Otomatisasi &amp; Pengujian Web3</h3>
-          <p>Skrip otomatisasi alur kerja, pengujian testnet kontrak pintar, dan verifikasi data otomatis.</p>
-          <div class="chips"><span>Skrip</span><span>Testnet</span><span>Verifikasi Data</span><span>Evaluasi AI</span></div>
-          <button class="card-btn" data-modal="web3">Lihat detail →</button>
+          <h3 data-i18n="card3_title">Otomatisasi &amp; Pengujian Web3</h3>
+          <p data-i18n="card3_text">Skrip otomatisasi alur kerja, pengujian testnet kontrak pintar, dan verifikasi data otomatis.</p>
+          <div class="chips" data-i18n="card3_chips"><span>Skrip</span><span>Testnet</span><span>Verifikasi Data</span><span>Evaluasi AI</span></div>
+          <button class="card-btn" data-modal="web3" data-i18n="see_details">Lihat detail →</button>
         </div>
       </article>
     </div>
@@ -152,65 +157,65 @@
 
   <!-- ============ KEMAMPUAN ============ -->
   <section class="section container" id="kemampuan">
-    <h2 class="section-title reveal"><span class="title-chip chip-yellow">03</span> Kemampuan</h2>
+    <h2 class="section-title reveal" data-i18n="skills_title"><span class="title-chip chip-yellow">03</span> Kemampuan</h2>
     <div class="skills-grid">
       <div class="skill reveal"><div class="skill-head"><span>Adobe Photoshop</span><span class="skill-pct">95%</span></div><div class="bar"><span style="--w:95%"></span></div></div>
       <div class="skill reveal"><div class="skill-head"><span>Adobe Premiere Pro</span><span class="skill-pct">92%</span></div><div class="bar"><span style="--w:92%"></span></div></div>
-      <div class="skill reveal"><div class="skill-head"><span>Transkripsi Bahasa Indonesia</span><span class="skill-pct">97%</span></div><div class="bar"><span style="--w:97%"></span></div></div>
-      <div class="skill reveal"><div class="skill-head"><span>Transkripsi Bahasa Inggris</span><span class="skill-pct">88%</span></div><div class="bar"><span style="--w:88%"></span></div></div>
-      <div class="skill reveal"><div class="skill-head"><span>Anotasi &amp; QA Data</span><span class="skill-pct">95%</span></div><div class="bar"><span style="--w:95%"></span></div></div>
-      <div class="skill reveal"><div class="skill-head"><span>Fotografi</span><span class="skill-pct">88%</span></div><div class="bar"><span style="--w:88%"></span></div></div>
-      <div class="skill reveal"><div class="skill-head"><span>Otomatisasi &amp; Penulisan Skrip</span><span class="skill-pct">85%</span></div><div class="bar"><span style="--w:85%"></span></div></div>
-      <div class="skill reveal"><div class="skill-head"><span>Pengujian Web3 &amp; Blockchain</span><span class="skill-pct">82%</span></div><div class="bar"><span style="--w:82%"></span></div></div>
+      <div class="skill reveal"><div class="skill-head"><span data-i18n="skill_id_trans">Transkripsi Bahasa Indonesia</span><span class="skill-pct">97%</span></div><div class="bar"><span style="--w:97%"></span></div></div>
+      <div class="skill reveal"><div class="skill-head"><span data-i18n="skill_en_trans">Transkripsi Bahasa Inggris</span><span class="skill-pct">88%</span></div><div class="bar"><span style="--w:88%"></span></div></div>
+      <div class="skill reveal"><div class="skill-head"><span data-i18n="skill_annot">Anotasi &amp; QA Data</span><span class="skill-pct">95%</span></div><div class="bar"><span style="--w:95%"></span></div></div>
+      <div class="skill reveal"><div class="skill-head"><span data-i18n="skill_photo">Fotografi</span><span class="skill-pct">88%</span></div><div class="bar"><span style="--w:88%"></span></div></div>
+      <div class="skill reveal"><div class="skill-head"><span data-i18n="skill_auto">Otomatisasi &amp; Penulisan Skrip</span><span class="skill-pct">85%</span></div><div class="bar"><span style="--w:85%"></span></div></div>
+      <div class="skill reveal"><div class="skill-head"><span data-i18n="skill_web3">Pengujian Web3 &amp; Blockchain</span><span class="skill-pct">82%</span></div><div class="bar"><span style="--w:82%"></span></div></div>
     </div>
   </section>
 
   <!-- ============ PENGALAMAN ============ -->
   <section class="section container" id="pengalaman">
-    <h2 class="section-title reveal"><span class="title-chip chip-purple">04</span> Pengalaman Kerja</h2>
-    <p class="section-sub reveal">Klik setiap pengalaman untuk membuka rinciannya.</p>
+    <h2 class="section-title reveal" data-i18n="work_title"><span class="title-chip chip-purple">04</span> Pengalaman Kerja</h2>
+    <p class="section-sub reveal" data-i18n="work_sub">Klik setiap pengalaman untuk membuka rinciannya.</p>
     <div class="timeline">
       <article class="exp reveal open">
         <button class="exp-head" aria-expanded="true">
           <span class="exp-dot dot-coral"></span>
-          <span class="exp-main"><strong>Annotator Data AI, Transkripsi &amp; Operasional Teknis</strong><small>Alignerr · CrowdGen · OneForma — Jarak Jauh / Lepas</small></span>
-          <span class="exp-period">Jan 2022 — Sekarang</span>
+          <span class="exp-main"><strong data-i18n="job1_title">Annotator Data AI, Transkripsi &amp; Operasional Teknis</strong><small data-i18n="job1_where">Alignerr · CrowdGen · OneForma — Jarak Jauh / Lepas</small></span>
+          <span class="exp-period" data-i18n="job1_period">Jan 2022 — Sekarang</span>
           <span class="exp-chevron" aria-hidden="true">▾</span>
         </button>
         <div class="exp-body">
           <ul>
-            <li>Berkontribusi dalam berbagai proyek AI dan teknologi digital jarak jauh (20+ jam/minggu) di bidang transkripsi audio, pengenalan ucapan, dan evaluasi teknis.</li>
-            <li>Menyelesaikan 500+ audio berdurasi 15 menit dengan rating kualitas 97% untuk Bahasa Indonesia dan 88,37% untuk Bahasa Inggris.</li>
-            <li>Mengembangkan skrip otomatisasi dan alur kerja untuk pengujian Web3, termasuk jaringan uji kontrak pintar dan verifikasi data otomatis.</li>
-            <li>Melakukan transkripsi, pelabelan audio, evaluasi linguistik, audit kualitas, dan pemeriksaan konsistensi data pelatihan AI — termasuk perbaikan kesalahan segmentasi, penyelarasan fonetik, dan logika penalaran.</li>
+            <li data-i18n="job1_b1">Berkontribusi dalam berbagai proyek AI dan teknologi digital jarak jauh (20+ jam/minggu) di bidang transkripsi audio, pengenalan ucapan, dan evaluasi teknis.</li>
+            <li data-i18n="job1_b2">Menyelesaikan 500+ audio berdurasi 15 menit dengan rating kualitas 97% untuk Bahasa Indonesia dan 88,37% untuk Bahasa Inggris.</li>
+            <li data-i18n="job1_b3">Mengembangkan skrip otomatisasi dan alur kerja untuk pengujian Web3, termasuk jaringan uji kontrak pintar dan verifikasi data otomatis.</li>
+            <li data-i18n="job1_b4">Melakukan transkripsi, pelabelan audio, evaluasi linguistik, audit kualitas, dan pemeriksaan konsistensi data pelatihan AI — termasuk perbaikan kesalahan segmentasi, penyelarasan fonetik, dan logika penalaran.</li>
           </ul>
         </div>
       </article>
       <article class="exp reveal">
         <button class="exp-head" aria-expanded="false">
           <span class="exp-dot dot-teal"></span>
-          <span class="exp-main"><strong>Staf Penjualan</strong><small>PT World Innovative Telecommunication — Produk OPPO</small></span>
-          <span class="exp-period">Des 2017 — Mei 2018</span>
+          <span class="exp-main"><strong data-i18n="job2_title">Staf Penjualan</strong><small data-i18n="job2_where">PT World Innovative Telecommunication — Produk OPPO</small></span>
+          <span class="exp-period" data-i18n="job2_period">Des 2017 — Mei 2018</span>
           <span class="exp-chevron" aria-hidden="true">▾</span>
         </button>
         <div class="exp-body">
           <ul>
-            <li>Melayani pelanggan di gerai, memberi konsultasi produk OPPO sesuai kebutuhan dan anggaran, serta menangani pertanyaan dan keluhan secara solutif.</li>
-            <li>Meningkatkan performa penjualan hingga peringkat lima besar dalam dua bulan melalui adaptasi dan perbaikan pendekatan penjualan.</li>
+            <li data-i18n="job2_b1">Melayani pelanggan di gerai, memberi konsultasi produk OPPO sesuai kebutuhan dan anggaran, serta menangani pertanyaan dan keluhan secara solutif.</li>
+            <li data-i18n="job2_b2">Meningkatkan performa penjualan hingga peringkat lima besar dalam dua bulan melalui adaptasi dan perbaikan pendekatan penjualan.</li>
           </ul>
         </div>
       </article>
       <article class="exp reveal">
         <button class="exp-head" aria-expanded="false">
           <span class="exp-dot dot-yellow"></span>
-          <span class="exp-main"><strong>Petugas Kamar</strong><small>Hotel Salak The Heritage</small></span>
+          <span class="exp-main"><strong data-i18n="job3_title">Petugas Kamar</strong><small>Hotel Salak The Heritage</small></span>
           <span class="exp-period">Jun 2017 — Nov 2017</span>
           <span class="exp-chevron" aria-hidden="true">▾</span>
         </button>
         <div class="exp-body">
           <ul>
-            <li>Membersihkan dan menata kamar sesuai standar kebersihan dan kenyamanan hotel, memeriksa kelengkapan fasilitas, dan menindaklanjuti permintaan tamu.</li>
-            <li>Mengelola waktu kerja secara efektif dalam operasional harian perhotelan.</li>
+            <li data-i18n="job3_b1">Membersihkan dan menata kamar sesuai standar kebersihan dan kenyamanan hotel, memeriksa kelengkapan fasilitas, dan menindaklanjuti permintaan tamu.</li>
+            <li data-i18n="job3_b2">Mengelola waktu kerja secara efektif dalam operasional harian perhotelan.</li>
           </ul>
         </div>
       </article>
@@ -219,14 +224,14 @@
 
   <!-- ============ PENDIDIKAN ============ -->
   <section class="section container" id="pendidikan">
-    <h2 class="section-title reveal"><span class="title-chip chip-pink">05</span> Pendidikan</h2>
+    <h2 class="section-title reveal" data-i18n="edu_title"><span class="title-chip chip-pink">05</span> Pendidikan</h2>
     <article class="edu-card reveal" data-tilt>
       <div class="edu-icon" aria-hidden="true">🎓</div>
       <div>
-        <h3>Sarjana Ilmu Komunikasi (S.I.Kom)</h3>
-        <p class="edu-school">Universitas Pakuan, Bogor · 2018 — 2023</p>
-        <p>Mata kuliah relevan:</p>
-        <div class="chips"><span>Penyiaran</span><span>Media Massa</span><span>Fotografi</span><span>Penyuntingan Video</span><span>Media Informasi Digital</span><span>Hubungan Masyarakat</span></div>
+        <h3 data-i18n="edu_degree">Sarjana Ilmu Komunikasi (S.I.Kom)</h3>
+        <p class="edu-school" data-i18n="edu_school">Universitas Pakuan, Bogor · 2018 — 2023</p>
+        <p data-i18n="edu_courses">Mata kuliah relevan:</p>
+        <div class="chips" data-i18n="edu_chips"><span>Penyiaran</span><span>Media Massa</span><span>Fotografi</span><span>Penyuntingan Video</span><span>Media Informasi Digital</span><span>Hubungan Masyarakat</span></div>
       </div>
     </article>
   </section>
@@ -236,34 +241,33 @@
     <div class="contact-card reveal">
       <span class="shape circle coral ck1" aria-hidden="true"></span>
       <span class="shape squig teal ck2" aria-hidden="true"></span>
-      <h2>SAYA SIAP BERGABUNG</h2>
-      <p><p>Disiplin, teliti, dan bertanggung jawab adalah cara saya bekerja yang didukung pengalaman pada penyuntingan visual, transkripsi, dan anotasi data. Saya sedang mencari peluang kerja di Negara tercinta Indonesia dan siap bergabung secepatnya. Hubungi saya lewat email atau WhatsApp di bawah ini.</p>
-</p>
+      <h2 data-i18n="contact_title">SAYA SIAP BERGABUNG</h2>
+      <p data-i18n="contact_text">Disiplin, teliti, dan bertanggung jawab adalah cara saya bekerja yang didukung pengalaman pada penyuntingan visual, transkripsi, dan anotasi data. Saya sedang mencari peluang kerja di Negara tercinta Indonesia dan siap bergabung secepatnya. Hubungi saya lewat email atau WhatsApp di bawah ini.</p>
       <p class="contact-email">elgabifardikaelfanda@gmail.com</p>
       <div class="hero-actions center">
   <a class="btn btn-primary" href="mailto:elgabifardikaelfanda@gmail.com">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-    Kirim Email
+    <span data-i18n="btn_email">Kirim Email</span>
   </a>
   <button class="btn btn-ghost" id="copyEmail">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-    Salin Email
+    <span data-i18n="btn_copy">Salin Email</span>
   </button>
   <a class="btn btn-ghost" href="https://wa.me/6287837066790" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     WhatsApp
   </a>
 </div>
-<p class="contact-meta">+62 878 3706 6790 · Bogor, Jawa Barat, Indonesia</p>
+<p class="contact-meta" data-i18n="contact_meta">+62 878 3706 6790 · Bogor, Jawa Barat, Indonesia</p>
   </section>
 </main>
 
 <footer class="footer">
-  <p>Dibuat oleh <strong>Elga Bifardika Elfanda</strong> · © <span id="year">2026</span></p>
+  <p><span data-i18n="footer_made">Dibuat oleh</span> <strong>Elga Bifardika Elfanda</strong> · © <span id="year">2026</span></p>
 </footer>
 
 <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
-<div class="toast" id="toast" role="status" aria-live="polite">Email tersalin!</div>
+<div class="toast" id="toast" role="status" aria-live="polite" data-i18n="toast_copied">Email tersalin!</div>
 
 <!-- Modal detail keahlian -->
 <div class="modal-backdrop" id="modalBackdrop" hidden>

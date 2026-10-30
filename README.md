@@ -25,19 +25,22 @@ assets/
   visual.jpg      Ilustrasi kartu Kreator Visual
   ai-data.jpg     Ilustrasi kartu Annotator Data AI
   web3.jpg        Ilustrasi kartu Otomatisasi & Web3
-  CV_Elga_Bifardika_Elfanda.pdf   CV untuk tombol "Unduh CV"
+  CV_Elga_Bifardika_Elfanda.pdf   CV (Bahasa Indonesia) untuk tombol "Unduh CV"
+  CV_Elga_Bifardika_Elfanda_EN.pdf   CV (English) — otomatis dipakai saat situs berbahasa Inggris
 ```
 
 ## Kustomisasi Cepat
 
 - **Mengganti foto/ilustrasi:** timpa file JPG di folder `assets` dengan nama yang sama persis.
 - **Mengganti teks:** edit `index.html` (nama, deskripsi, pengalaman, dsb. tertulis langsung di sana).
-- **Menambah tautan GitHub:** di `index.html`, cari komentar `Tambahkan tautan GitHub Anda di sini` lalu ganti `href="#"` dengan URL profil GitHub Anda.
-- **Mengganti CV:** timpa `assets/CV_Elga_Bifardika_Elfanda.pdf` dengan file CV terbaru (nama harus sama).
+- **Tautan GitHub:** sudah terpasang ke `github.com/premology` (ikon GitHub di hero).
+- **Mengganti CV:** timpa `assets/CV_Elga_Bifardika_Elfanda.pdf` (versi Indonesia) dan/atau `assets/CV_Elga_Bifardika_Elfanda_EN.pdf` (versi Inggris) dengan file terbaru (nama harus sama).
+- **Dua bahasa (ID/EN):** tombol ID/EN ada di kanan atas. Semua teks yang bisa diganti ditandai `data-i18n="..."` di `index.html`; terjemahan Inggrisnya ada di `js/main.js` pada objek `I18N_EN` (teks halaman), `MODALS_EN` (isi modal), dan `rolesEN` (peran berganti). Untuk mengubah terjemahan, edit teks di `main.js` — teks Indonesianya tetap yang tertulis di `index.html`. Pilihan bahasa tersimpan otomatis, dan tombol Unduh CV otomatis mengarah ke CV sesuai bahasa yang aktif.
 - **Mode gelap:** tersedia lewat tombol matahari/bulan di kanan atas; pilihan tersimpan otomatis.
 
 ## Fitur
 
+- **Dwibahasa Indonesia / Inggris** — tombol ID/EN di kanan atas, seluruh halaman berganti bahasa (termasuk modal, peran berganti, dan file CV yang diunduh)
 - Objek Memphis melayang & parallax mengikuti gerakan mouse
 - Kartu keahlian bisa diklik (modal detail) + efek tilt 3D
 - Pengalaman kerja berupa akordeon yang bisa dibuka-tutup

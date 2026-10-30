@@ -355,3 +355,9 @@ html[data-theme="dark"] .chips span{background:var(--paper)}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+
+/* Tombol ganti bahasa ID / EN */
+.lang-switch{display:flex;gap:6px;align-items:center}
+.lang-btn{font:inherit;font-weight:700;font-size:.8rem;padding:7px 11px;border-radius:10px;border:2.5px solid var(--border);background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .15s ease,background .15s ease}
+.lang-btn:hover{transform:translate(-1px,-2px)}
+.lang-btn.active{background:var(--coral);color:#fff}
