@@ -133,7 +133,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
 .hero-actions.center{justify-content:center}
 .btn{
-  display:inline-block;text-decoration:none;font-weight:700;font-size:.98rem;padding:13px 26px;
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;font-size:.98rem;padding:13px 26px;
   border-radius:14px;border:2.5px solid var(--border);cursor:pointer;font-family:inherit;
   transition:transform .15s ease,box-shadow .15s ease;
 }
@@ -141,7 +141,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .btn-primary:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
 .btn-primary:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--ink)}
 .btn-ghost{background:var(--paper);color:var(--ink);box-shadow:var(--shadow-sm)}
-.btn-ghost:hover{transform:translate(-1px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn svg{width:18px;height:18px;fill:currentColor;flex:none}
 .socials{display:flex;gap:12px;margin-top:30px}
 .socials a{
   width:46px;height:46px;border-radius:14px;border:2.5px solid var(--border);background:var(--paper);
@@ -278,7 +278,7 @@ html[data-theme="dark"] .chips span{background:var(--paper)}
 .contact-card h2{font-size:clamp(1.9rem,4.5vw,2.7rem);margin-bottom:14px}
 .contact-card p{color:var(--ink-soft);max-width:36rem;margin:0 auto 12px}
 .contact-email{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1rem,2.6vw,1.35rem);color:var(--ink)!important;margin:18px auto 6px!important;word-break:break-all}
-.contact-meta{font-weight:600;font-size:.92rem}
+.contact-card .contact-meta{font-weight:600;font-size:.92rem;margin-top:30px}
 .contact-card .ck1{width:74px;height:74px;top:-24px;left:-18px;opacity:.8;animation:floaty 8s ease-in-out infinite}
 .contact-card .ck2{width:100px;height:28px;bottom:16px;right:20px;opacity:.8;animation:drift 10s ease-in-out infinite}
 
